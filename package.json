@@ -1,7 +1,7 @@
 {
   "name": "real-name",
   "version": "1.0.0",
-  "description": "Contains a function isName which will return true if the provided string contains a name in the list of top baby names in the US between 1880 and 2008. For example, the string \"Apple\" would return false but the string \"Mike\" would return true.",
+  "description": "A simple utility that checks if a string matches any name used in the United States from 1880-2008, based on Social Security Administration data. Perfect for validating user inputs or detecting names in text.",
   "main": "index.js",
   "files": [
     "index.js",
