@@ -1,0 +1,34 @@
+{
+  "name": "real-name",
+  "version": "1.0.0",
+  "description": "Contains a function isName which will return true if the provided string contains a name in the list of top baby names in the US between 1880 and 2008. For example, the string \"Apple\" would return false but the string \"Mike\" would return true.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "names.js",
+    "build.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adomakins/real-name.git"
+  },
+  "keywords": [
+    "is-name",
+    "real-name",
+    "baby names",
+    "us baby names",
+    "name verifier",
+    "name validator"
+  ],
+  "author": "Adam Skjervold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adomakins/real-name/issues"
+  },
+  "homepage": "https://github.com/adomakins/real-name#readme"
+}
