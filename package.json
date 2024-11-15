@@ -1,7 +1,7 @@
 {
   "name": "real-name",
-  "version": "1.0.0",
-  "description": "A simple utility that checks if a string matches any name used in the United States from 1880-2008, based on Social Security Administration data. Perfect for validating user inputs or detecting names in text.",
+  "version": "1.0.2",
+  "description": "A lightweight utility that compares a given string against a list of names from the United States to know if it's a valid name.",
   "main": "index.js",
   "files": [
     "index.js",

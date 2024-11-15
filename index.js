@@ -20,10 +20,3 @@ const isName = (nameToCheck) => {
 };
 
 module.exports = isName;
-
-// Example usage
-if (require.main === module) {
-    const testName = "John";
-    isName(testName)
-        .then(result => console.log(`Is "${testName}" a valid name? ${result}`));
-}

@@ -2,7 +2,7 @@
 
 A lightweight utility that checks if a string matches any name that has been used in the United States from 1880 to 2008, based on Social Security Administration data.
 
-This also works for names from other countries. Check out the full dataset [here](https://github.com/adomakins/real-name/blob/main/names.csv) to check it out for yourself.
+This also works for names from other countries. Check out the full dataset [here](https://github.com/adomakins/real-name/blob/main/names.csv) to see for yourself.
 
 ## Installation
 
