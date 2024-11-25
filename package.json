@@ -1,6 +1,6 @@
 {
   "name": "real-name",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A lightweight utility that compares a given string against a list of names from the United States to know if it's a valid name.",
   "main": "index.js",
   "type": "module",

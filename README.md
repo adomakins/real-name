@@ -2,7 +2,16 @@
 
 A lightweight utility that checks if a string matches any name that has been used in the United States from 1880 to 2008, based on Social Security Administration data.
 
-This also works for names from other countries. Check out the full dataset [here](https://github.com/adomakins/real-name/blob/main/names.csv) to see for yourself.
+This also works for names from other countries. Check out the full dataset <a href="https://github.com/adomakins/real-name/blob/main/names.csv" target="_blank">here</a> to see for yourself.
+
+## Version 2.0.0
+
+I actually started using this package to extract names from a dataset of email addresses.
+
+- Updated to use ESM syntax
+- Changed to use JSON file with names grouped by length for faster lookups
+
+Here's a quick <a href="https://youtu.be/GXC43r3H6Vg" target="_blank">YouTube video</a> I made showing how I used this package to extract names from a dataset of email addresses.
 
 ## Installation
 
@@ -12,13 +21,19 @@ npm install real-name
 
 ## Usage
 
+### Check if a string is a name
+
 ```javascript
 import isName from 'real-name';
 
 // Basic name checking
 console.log(isName('John')); // true
 console.log(isName('Fruitcake')); // false
+```
 
+### Combine with `word-exists`
+
+```javascript
 // Optional accessory to combine with isName
 // Not my package, need to install it separately
 // And update it to use ESM syntax
@@ -32,6 +47,18 @@ function isValidName(str) {
 console.log(isValidName('Ace')); // false (it's a word too, not just a name)
 console.log(isValidName('John')); // true (it's just a name, not a word)
 
+```
+
+### First names only
+
+```javascript
+import isName from 'real-name';
+
+const fullName = 'John Smith';
+const firstName = fullName.split(' ')[0];
+
+console.log(isName(fullName)); // false
+console.log(isName(firstName)); // true
 ```
 
 ## Features
