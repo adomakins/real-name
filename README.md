@@ -6,10 +6,11 @@ This also works for names from other countries. Check out the full dataset <a hr
 
 ## Version 2.0.0
 
-I actually started using this package to extract names from a dataset of email addresses.
+I finally started using this package to extract names from a dataset of email addresses, and I found some ways to improve it.
 
 - Updated to use ESM syntax
 - Changed to use JSON file with names grouped by length for faster lookups
+- Good to combine with `word-exists` package for stricter filtering
 
 Here's a quick <a href="https://youtu.be/GXC43r3H6Vg" target="_blank">YouTube video</a> I made showing how I used this package to extract names from a dataset of email addresses.
 
@@ -49,7 +50,7 @@ console.log(isValidName('John')); // true (it's just a name, not a word)
 
 ```
 
-### First names only
+### Works with first names only
 
 ```javascript
 import isName from 'real-name';
