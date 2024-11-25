@@ -30,6 +30,10 @@ import isName from 'real-name';
 // Basic name checking
 console.log(isName('John')); // true
 console.log(isName('Fruitcake')); // false
+
+// Works with first names only
+console.log(isName('John Smith')); // false
+console.log(isName('John')); // true
 ```
 
 ### Combine with `word-exists`
@@ -48,18 +52,6 @@ function isValidName(str) {
 console.log(isValidName('Ace')); // false (it's a word too, not just a name)
 console.log(isValidName('John')); // true (it's just a name, not a word)
 
-```
-
-### Works with first names only
-
-```javascript
-import isName from 'real-name';
-
-const fullName = 'John Smith';
-const firstName = fullName.split(' ')[0];
-
-console.log(isName(fullName)); // false
-console.log(isName(firstName)); // true
 ```
 
 ## Features
