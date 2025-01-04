@@ -5,10 +5,9 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Load the JSON file
-const namesByLength = JSON.parse(
-    readFileSync(join(__dirname, 'names.json'), 'utf-8')
-);
+// Add this line to include the JSON directly
+const names = JSON.stringify(await import('./names.json', { assert: { type: 'json' } }));
+const namesByLength = JSON.parse(names);
 
 const isName = (nameToCheck) => {
     if (!nameToCheck || typeof nameToCheck !== 'string') {

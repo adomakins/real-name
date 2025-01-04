@@ -1,16 +1,16 @@
 {
   "name": "real-name",
-  "version": "2.0.1",
+  "version": "3.0.3",
   "description": "A lightweight utility that compares a given string against a list of names from the United States to know if it's a valid name.",
   "main": "index.js",
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./names": "./names.json"
   },
   "files": [
     "index.js",
-    "names.js",
-    "build.js"
+    "names.json"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
